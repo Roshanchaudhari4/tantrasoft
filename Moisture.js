@@ -47,26 +47,26 @@ for(var i = 0; i < lines.length ; i++){
     if(line.includes("Start Weight")){    
         var startWeight = line.split("Start Weight")[1].trim();
         // console.log(startWeight[1].trim())
-        Finalresult.push({key: "startWeight:", value: startWeight})
+        Finalresult.push({startWeight : startWeight})
         
     }
     
     if(line.includes("Total time")){    
          var Totaltime = line.split("Total time")[1].trim();
         // console.log(Totaltime[1].trim())
-        Finalresult.push({key: "Totaltime:", value: Totaltime})
+        Finalresult.push({Totaltime : Totaltime})
     }
     
     if(line.includes("Dry Weight")){    
          var DryWeight = line.split("Dry Weight")[1].trim();
         // console.log(DryWeight[1].trim())
-        Finalresult.push({key: "DryWeight:", value: DryWeight})
+        Finalresult.push({DryWeight : DryWeight})
     }
     
     if(line.includes("End Result")){    
          var EndResult = line.split("End Result")[1].trim();
         // console.log(EndResult[1].trim())
-        Finalresult.push({key: "EndResult:", value: EndResult})
+        Finalresult.push({EndResult : EndResult})
     }
 } 
 console.log(Finalresult)
