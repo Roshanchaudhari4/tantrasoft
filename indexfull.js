@@ -24,3 +24,4 @@ console.log("Serial No:", serial_no,
 "\nHardness:", hardness,
  "\n.............");
 }
+
