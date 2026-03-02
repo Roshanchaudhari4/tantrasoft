@@ -1,0 +1,30 @@
+// let arr = [1,2,3,4,5,55,77,33,22]
+// >    find the largest and second largest from given array in js
+
+let arr = [1,2,3,4,5,55,77,33,22];
+
+
+let largest = 0;
+let secondLargest = 0;
+
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] > largest){                  
+        secondLargest = largest
+        largest = arr[i]
+    }else if(arr[i] > secondLargest && arr[i] !== largest){
+    secondLargest = arr[i]
+}
+console.log("Largest number:", largest);
+console.log("second-Largest number:", secondLargest);
+}
+
+
+
+
+
+
+
+
+
+
+
